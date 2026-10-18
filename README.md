@@ -1,39 +1,31 @@
-# BLACKED Fusion 4.0 — modular, image-bundled concept shop
+# BLACKED Big Update V1.8
 
-This is a **front-end prototype**, packaged as separate HTML, CSS, JavaScript and local image assets—not a single HTML-only file. It is built mobile-first and does not need a CDN or remote image host.
+## What changed
+- **Image-loading repair:** the homepage hero, all 8 360° angle frames, wellness illustrations, cropped reference visuals and all local assets are embedded into `index.html`/`app.js` as data URLs. A fallback catches unexpected image failures, so a missing `/assets/` folder should no longer show broken-image icons.
+- **Missing Intimates pictures replaced:** the supplied V1.7 ZIP did not include the original legacy `ref-*`, `design-*`, or SYRN SVG files. Four generated, clearly labelled editorial concept images replace those broken references. They are concepts, not verified stock or supplier photography.
+- **Three main experiences stay separate:** Intimates, After Dark 18+, and Women’s Wellness. Fit Studio, 360° preview and size guide remain available as tools.
+- **Couples Corner:** flirty, suggestive but non-graphic fantasy prompts; users can choose a vibe, generate another prompt and copy it. Prompts are not sent or saved. It includes an opt-out / consent reminder.
+- **Size Surprise Wheel:** select For Him, dildo or butt-plug size-guide mode; spin to reveal a comparison band plus a demo coupon; add its product concept to the demo bag. It does not predict any person’s body size.
+- **Size guide improvements:** length vs girth/circumference explained; dildo dimensions use usable length + maximum diameter; butt-plug dimensions use widest diameter + usable length + secure flared-base reminder. An optional cm/inches converter is included.
 
-## Package contents
+## Important limitations
+- This is a static prototype. No real inventory, product variants, account backend, price calculation, coupon engine, payment provider, checkout or order management is connected. Discount codes are visual demo rewards only.
+- Generated fashion images and sex-toy SVGs are design concepts, not proof of real product inventory or verified product dimensions/materials. Obtain supplier-approved imagery and specifications before selling.
+- The 360° viewer uses eight generated concept-angle images, not manufacturer-supplied 3D photography.
+- The simple 18+ confirmation is not identity verification.
+- The Couple’s Corner prompts are flirty and suggestive, not explicit. Consent and the ability to skip any prompt are emphasised.
 
-- `index.html` — semantic page structure and separate sections.
-- `styles.css` — responsive layouts, accessible states and visual system.
-- `app.js` — tab/navigation interactions, search/filter, saved styles, fit notes, generated messages, three independent wheels and local demo-bag behavior.
-- `assets/` — five optimized WebP campaign posters plus one clean hero crop made from the supplied artwork.
-- `data/catalog.json` — sample front-end catalog concepts (not a real stock feed).
-- `TEST-CHECKLIST.md` — automated and manual test notes.
+## Image reliability
+All local asset keys are included as embedded data URLs in `app.js`. The hero, first 360° frame and reference strip images are embedded directly into `index.html`. This is designed to prevent broken images even when uploading from a phone accidentally omits the `assets/` folder. Keep the folder anyway for easier editing.
 
-## Main sections
+## Deploy from a phone
+1. Extract the ZIP.
+2. Open your GitHub repository and upload/replace `index.html`, `styles.css`, `app.js` and `VERSION.txt` at the repository root.
+3. Upload the full `assets/` folder too (recommended, although the current code embeds the assets). Do not upload the outer wrapper folder as a nested folder.
+4. Commit changes, wait for GitHub Pages to finish, then refresh/reopen the live URL.
 
-1. **Innerwear** — local campaign-image cards, search, category filtering and saved styles.
-2. **Sanskari Edit** — dedicated black/gold campaign gallery, plus a respectful “Faith & Culture Edit” teaser marked Coming Soon (Muslim- and Christian-inspired moodboards are not represented as authoritative religious guidance).
-3. **Wellness 18+** — self-attestation gate; body/anatomy education; simple dimensions guide; separate dildo and butt-plug preference/discount wheels; product-care, lubrication and flared-base safety notes.
-4. **Boyfriend** — date ideas, message prompts, suggestive Hinglish/English lines, a secret fantasy conversation deck, boundaries and its own size/deal wheel.
-5. **Fit Studio** — local fit notes and saved style references.
-
-## Image-load fix
-
-All six bundled images are stored in `assets/` and referenced by local relative paths such as `assets/sanskari-mirror.webp`. Extract the **whole ZIP**, not only `index.html`. For GitHub Pages, upload `index.html`, `styles.css`, `app.js`, `data/` and the entire `assets/` directory into the same published root. The JavaScript swaps any missing image for a branded fallback instead of showing a broken-image icon. `window.BLACKED_FUSION_DIAGNOSTICS()` can be inspected in the browser console.
-
-## Research notes and limits
-
-- Professionally measured adult penis-size systematic review: average erect length 13.12 cm and circumference 11.66 cm, in the included samples; these are population statistics, not targets. [Veale et al., BJU International / PubMed](https://pubmed.ncbi.nlm.nih.gov/25487360/).
-- Toys are not standardized by labels; check the manufacturer's actual insertable length, maximum diameter, material and care guidance. [Planned Parenthood: Sex Toys](https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure/sex-toys).
-- Anal toys need a flared base/stop feature and plenty of suitable lubricant; the anus does not lubricate itself. [Planned Parenthood: Safer Sex](https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/safer-sex/how-do-i-make-sex-safer).
-- Vaginal appearance and dimensions naturally vary, and a hymen exam is not a reliable way to determine sexual history. [Cleveland Clinic: Vagina](https://my.clevelandclinic.org/health/body/22469-vagina).
-- Sexual fantasy content differs between individuals; fantasies are not proof of what someone wants to do in real life. [Lehmiller & Gormezano, 2023 review](https://pubmed.ncbi.nlm.nih.gov/36436469/).
-- Consent communication: [Planned Parenthood](https://www.plannedparenthood.org/learn/relationships/sexual-consent/how-do-i-talk-about-consent).
-
-The wheels use illustrative size filters and **fake demo discounts only**. They do not check body measurements, display real inventory, create real deals, or process payment. This demo has no secure account system or formal age verification; the 18+ gate is self-attestation. Fantasy text is generated in memory only and is not written to browser storage. Saved styles/fit notes are local to the browser and can be cleared; avoid storing sensitive private details on a shared device.
-
-## Quick run
-
-Open `index.html` in a modern browser after extracting the ZIP. When publishing, keep all files and folders together. No build step or internet connection is required to render the local campaign images.
+## Sources used for the size guide
+- NHS Sexual Health St Helens — https://www.sexualhealthsthelens.nhs.uk/adult-the-penis
+- Planned Parenthood Toronto — https://ppt.on.ca/factsheets/anal-play/
+- Planned Parenthood — https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure/sex-toys
+- Cleveland Clinic — https://health.clevelandclinic.org/safe-sex

@@ -1,0 +1,6 @@
+BLACKED Intimates + Wellness
+Version: 1.8
+Build type: Static HTML/CSS/JavaScript
+Main fix: embed all visual assets in code; local fallback prevents broken images after partial asset uploads.
+Features: Intimates / After Dark 18+ / Women’s Wellness / Couples Corner; 360° viewer; flirty prompt generator; size guide wheel with demo coupon; cm/in converters.
+Limitations: no live stock, prices, checkout, payments or AI try-on. Generated imagery and discounts are concepts only.
