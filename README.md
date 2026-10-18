@@ -1,41 +1,29 @@
-# BLACKED — Visual Reference v3
+# BLACKED Fusion 3.0
 
-A mobile-first concept storefront based on the supplied BLACKED reference screenshots. The build uses a black base, hot-pink accents, round category chips, compact two-column mobile product cards, and separate experiences rather than one crowded page.
+A standalone, mobile-first static site concept built around the supplied BLACKED Sanskari Edit campaign artwork.
 
-## What is included
+## What's new in 3.0
+- Dedicated **Sanskari Edit** story gallery using five locally bundled, optimized campaign images.
+- Full-portrait campaign art preserves text printed into the uploaded poster; cards avoid awkward image cropping.
+- Search, category filters, sort order, story preview modal, local wishlist, demo bag with quantities/removal, and illustrative totals.
+- Separate 18+ Wellness area with a second self-attestation gate, topic tabs, and comfort finder.
+- Boyfriend toolkit: date idea builder, message generator with copy action, conversation cards, and boundaries/consent guidance.
+- Fit Studio with a general fit checklist and private on-device notes.
+- Local profile preferences, JSON export, reset controls, sticky mobile navigation, back-to-top, and basic PWA/offline shell support.
+- No external image/CDN dependencies.
 
-- **Home** — hero, category shortcuts, campaign strips and best sellers.
-- **Innerwear** — filterable concept catalogue, search and local wishlist.
-- **Sanskari Edit** — a separate desi-inspired campaign and collection.
-- **Wellness 18+** — a separate self-attestation gate, product concepts and a comfort/care guidance finder.
-- **Boyfriend** — date planner, message ideas, conversation prompts and healthy-boundary guidance.
-- **Fit Studio** — fit checklist and private notes stored in the current browser.
-- **Wishlist and demo bag** — locally stored prototype interactions; checkout is not connected.
-- Cropped WebP images from the screenshots you supplied. Crops that were too text-heavy or awkward were not used as full-page screenshots.
-
-## Open the site
-
-Extract the ZIP and open `index.html` in a modern browser. The CSS, JavaScript and image files are included in the ZIP; no build command or external library is required.
-
-For a local static server, run from this folder:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
+## Run locally
+Open `index.html` in a browser. PWA/service-worker behaviour is available when served via HTTPS or localhost; it will not register on a `file://` URL.
 
 ## Publish on GitHub Pages
+1. Extract the ZIP.
+2. Upload the contents of this folder (including `assets/`, `manifest.webmanifest`, and `sw.js`) to the root of the repository or a `/docs` folder selected in Pages settings.
+3. In GitHub, open **Settings → Pages**, select the correct branch/folder, and save.
+4. Wait for deployment, open the published URL on a phone, and refresh once if an older service-worker cache appears.
 
-1. Extract all files and folders from this ZIP.
-2. Upload `index.html`, `styles.css`, `app.js`, and the full `assets/` folder to the repository root (keep the folder and filenames unchanged).
-3. Open repository **Settings → Pages**, select the branch and `/ (root)`, and save.
-4. After Pages publishes, open the public URL and check it on a phone.
-
-## Important prototype limits
-
-- This is a front-end concept, not connected to live inventory, real orders, checkout, payment, account sign-in, delivery or any backend.
-- Product names, prices, discounts and labels are demonstration content, not current offers or verified specifications.
-- Wishlist, demo bag and Fit Studio notes live only in the current browser/device and do not sync.
-- The Wellness prompt is a self-attestation only, not formal age verification. The educational text is general information, not medical advice.
-- Supplied screenshots are compressed references; the included visual crops work for a prototype but should be replaced by original high-resolution product/model files before a public production launch.
+## Important prototype boundaries
+- The campaign artwork was provided by the user. It is bundled as local WebP assets to make the page lighter; poster layouts are preserved rather than aggressively cropped.
+- Prices are illustrative UI test values only. The bag does not place orders and the checkout button only shows a demo notice.
+- No backend, live inventory, payment gateway, shipping, user accounts, medical advice, or cloud sync are configured.
+- Age checks are self-attestation only, not verified age checks.
+- The 18+ topics provide general education and do not provide diagnosis or explicit product guidance.
