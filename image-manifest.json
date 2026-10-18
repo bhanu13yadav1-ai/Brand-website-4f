@@ -1,0 +1,44 @@
+[
+  {
+    "file": "hero-model-crop.webp",
+    "format": "WEBP",
+    "width": 579,
+    "height": 1230,
+    "bytes": 73860
+  },
+  {
+    "file": "sanskari-ankhein.webp",
+    "format": "WEBP",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 222662
+  },
+  {
+    "file": "sanskari-entry.webp",
+    "format": "WEBP",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 171844
+  },
+  {
+    "file": "sanskari-mirror.webp",
+    "format": "WEBP",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 162002
+  },
+  {
+    "file": "sanskari-pallu.webp",
+    "format": "WEBP",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 150580
+  },
+  {
+    "file": "sanskari-raat.webp",
+    "format": "WEBP",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 192468
+  }
+]

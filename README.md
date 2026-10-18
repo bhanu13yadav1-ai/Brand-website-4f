@@ -1,36 +1,39 @@
-# BLACKED Fusion 3.0 — static concept website
+# BLACKED Fusion 4.0 — modular, image-bundled concept shop
 
-This update fixes the missing-image setup and adds a larger Sanskari Edit collection plus adult wellness and relationship tools. It is a front-end prototype, not a production shop.
+This is a **front-end prototype**, packaged as separate HTML, CSS, JavaScript and local image assets—not a single HTML-only file. It is built mobile-first and does not need a CDN or remote image host.
 
-## What's included
+## Package contents
 
-- **Bundled images:** five optimized WebP campaign assets in `assets/`. Image links are relative (`assets/...`) and do not depend on a third-party image host. Keep the whole `assets` folder beside `index.html`.
-- **Sanskari Edit:** its own campaign section with the supplied black/gold artwork and separate image cards.
-- **Innerwear concept gallery:** image-backed cards, search/category filters and locally saved style notes.
-- **Wellness 18+:** self-attestation gate, product-type selector, preferred-size finder, easy definitions of length/diameter/circumference, adult penis-size information and safety notes.
-- **Boyfriend:** date planner, relationship message generator, conversation cards, suggestive-but-non-graphic flirt generator, consent-led fantasy openers, and a size/discount wheel.
-- **Size & Deal Wheel:** randomly lands on Compact / Medium / Large / Surprise and shows a sample 10–25% discount. These are mock promotions only; adding an offer adds it to a local demo bag.
-- **Fit Studio:** private fit notes and saved styles stored in local browser storage when available.
-- **Responsive layout:** checked at 390px mobile and 1440px desktop widths.
+- `index.html` — semantic page structure and separate sections.
+- `styles.css` — responsive layouts, accessible states and visual system.
+- `app.js` — tab/navigation interactions, search/filter, saved styles, fit notes, generated messages, three independent wheels and local demo-bag behavior.
+- `assets/` — five optimized WebP campaign posters plus one clean hero crop made from the supplied artwork.
+- `data/catalog.json` — sample front-end catalog concepts (not a real stock feed).
+- `TEST-CHECKLIST.md` — automated and manual test notes.
 
-## Open the site
+## Main sections
 
-1. Extract `BLACKED-Fusion-v3.0.zip`.
-2. Open `index.html` in a browser.
-3. To publish with GitHub Pages, upload `index.html` **and the complete `assets/` folder** to the same published directory. Uploading only `index.html` will break image paths.
+1. **Innerwear** — local campaign-image cards, search, category filtering and saved styles.
+2. **Sanskari Edit** — dedicated black/gold campaign gallery, plus a respectful “Faith & Culture Edit” teaser marked Coming Soon (Muslim- and Christian-inspired moodboards are not represented as authoritative religious guidance).
+3. **Wellness 18+** — self-attestation gate; body/anatomy education; simple dimensions guide; separate dildo and butt-plug preference/discount wheels; product-care, lubrication and flared-base safety notes.
+4. **Boyfriend** — date ideas, message prompts, suggestive Hinglish/English lines, a secret fantasy conversation deck, boundaries and its own size/deal wheel.
+5. **Fit Studio** — local fit notes and saved style references.
 
-## Important limitations
+## Image-load fix
 
-- This is a static concept demo. There is no backend, account system, live inventory, real product pricing, real discount redemption, checkout or payment processing.
-- The Size & Deal Wheel is a playful prototype; you are not required to buy anything. Size bands in the wheel are rough shop-filter examples, not medical advice or universal industry standards.
-- The five supplied campaign posters are included. The original full 43-image product library/features from the three linked GitHub repositories have **not** been fully merged into this package.
-- The age gate is self-attestation only; it does not verify identity or age.
-- Wellness copy is general educational information and is not medical diagnosis.
+All six bundled images are stored in `assets/` and referenced by local relative paths such as `assets/sanskari-mirror.webp`. Extract the **whole ZIP**, not only `index.html`. For GitHub Pages, upload `index.html`, `styles.css`, `app.js`, `data/` and the entire `assets/` directory into the same published root. The JavaScript swaps any missing image for a branded fallback instead of showing a broken-image icon. `window.BLACKED_FUSION_DIAGNOSTICS()` can be inspected in the browser console.
 
-## Research references used for the size guide
+## Research notes and limits
 
-- Veale et al., *BJU International* systematic review of professionally measured penis length and circumference (2015; PubMed): https://pubmed.ncbi.nlm.nih.gov/25487360/
-- Planned Parenthood, *Sex Toys* — toy materials, cleaning, lubrication and anal-toy flared-base safety: https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure/sex-toys
-- Planned Parenthood, *How Do I Make Sex Safer?* — lubricant and friction guidance: https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/safer-sex/how-do-i-make-sex-safer
+- Professionally measured adult penis-size systematic review: average erect length 13.12 cm and circumference 11.66 cm, in the included samples; these are population statistics, not targets. [Veale et al., BJU International / PubMed](https://pubmed.ncbi.nlm.nih.gov/25487360/).
+- Toys are not standardized by labels; check the manufacturer's actual insertable length, maximum diameter, material and care guidance. [Planned Parenthood: Sex Toys](https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure/sex-toys).
+- Anal toys need a flared base/stop feature and plenty of suitable lubricant; the anus does not lubricate itself. [Planned Parenthood: Safer Sex](https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/safer-sex/how-do-i-make-sex-safer).
+- Vaginal appearance and dimensions naturally vary, and a hymen exam is not a reliable way to determine sexual history. [Cleveland Clinic: Vagina](https://my.clevelandclinic.org/health/body/22469-vagina).
+- Sexual fantasy content differs between individuals; fantasies are not proof of what someone wants to do in real life. [Lehmiller & Gormezano, 2023 review](https://pubmed.ncbi.nlm.nih.gov/36436469/).
+- Consent communication: [Planned Parenthood](https://www.plannedparenthood.org/learn/relationships/sexual-consent/how-do-i-talk-about-consent).
 
-The review reports averages (about 13.12 cm erect length and 11.66 cm erect circumference); these are population statistics, not a target or a judgement of a partner. Toy dimensions and labels differ by manufacturer, so actual product details matter.
+The wheels use illustrative size filters and **fake demo discounts only**. They do not check body measurements, display real inventory, create real deals, or process payment. This demo has no secure account system or formal age verification; the 18+ gate is self-attestation. Fantasy text is generated in memory only and is not written to browser storage. Saved styles/fit notes are local to the browser and can be cleared; avoid storing sensitive private details on a shared device.
+
+## Quick run
+
+Open `index.html` in a modern browser after extracting the ZIP. When publishing, keep all files and folders together. No build step or internet connection is required to render the local campaign images.

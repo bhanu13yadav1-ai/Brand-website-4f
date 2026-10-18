@@ -1,0 +1,66 @@
+{
+  "result": "PASS",
+  "version": "4.0.0",
+  "html_ids": 102,
+  "duplicate_ids": [],
+  "javascript_id_selectors_checked": 78,
+  "missing_javascript_id_selectors": [],
+  "image_elements": 12,
+  "image_assets": [
+    {
+      "file": "hero-model-crop.webp",
+      "format": "WEBP",
+      "width": 579,
+      "height": 1230,
+      "bytes": 73860
+    },
+    {
+      "file": "sanskari-ankhein.webp",
+      "format": "WEBP",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 222662
+    },
+    {
+      "file": "sanskari-entry.webp",
+      "format": "WEBP",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 171844
+    },
+    {
+      "file": "sanskari-mirror.webp",
+      "format": "WEBP",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 162002
+    },
+    {
+      "file": "sanskari-pallu.webp",
+      "format": "WEBP",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 150580
+    },
+    {
+      "file": "sanskari-raat.webp",
+      "format": "WEBP",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 192468
+    }
+  ],
+  "external_stylesheet_and_script": true,
+  "inline_script_blocks": 0,
+  "inline_style_blocks": 0,
+  "node_syntax": "PASS",
+  "features_checked": [
+    "spinWheel",
+    "spinDildo",
+    "spinPlug",
+    "makeSecret",
+    "convertMeasure",
+    "BLACKED_FUSION_DIAGNOSTICS"
+  ],
+  "scope": "Static validation only. See data/browser-test-results.json for interactive Chromium tests; public GitHub Pages is not tested."
+}

@@ -1,0 +1,41 @@
+{
+  "version": "4.0-demo",
+  "notice": "Concept references only. These are not real SKUs, stock claims or purchasable products.",
+  "items": [
+    {
+      "id": "sanskari-ankhein",
+      "name": "Aankhein Neeche",
+      "section": "Sanskari Edit",
+      "image": "assets/sanskari-ankhein.webp",
+      "type": "campaign"
+    },
+    {
+      "id": "sanskari-mirror",
+      "name": "Mirror Knows",
+      "section": "Sanskari Edit",
+      "image": "assets/sanskari-mirror.webp",
+      "type": "campaign"
+    },
+    {
+      "id": "sanskari-raat",
+      "name": "Sanskari Raat",
+      "section": "Sanskari Edit",
+      "image": "assets/sanskari-raat.webp",
+      "type": "campaign"
+    },
+    {
+      "id": "sanskari-entry",
+      "name": "Entry Shareef",
+      "section": "Sanskari Edit",
+      "image": "assets/sanskari-entry.webp",
+      "type": "campaign"
+    },
+    {
+      "id": "sanskari-pallu",
+      "name": "Pallu Shareef",
+      "section": "Sanskari Edit",
+      "image": "assets/sanskari-pallu.webp",
+      "type": "campaign"
+    }
+  ]
+}
