@@ -1,0 +1,16 @@
+BLACKED FUSION 3.1 — PATCH CONTENTS
+
+This ZIP is laid out for the REPOSITORY ROOT.
+
+Required files/folders:
+- index.html          (replace the old index.html)
+- css/styles.css      (new CSS folder/file)
+- js/app.js           (new JS folder/file)
+- assets/*.webp       (the packaged images; keep every file)
+
+IMPORTANT:
+- Do not upload just index.html: that recreates the broken/unstyled result.
+- Do not rename assets or move the CSS/JS files.
+- Existing old root-level images can remain; this version references only the packaged assets/ files.
+- After publishing, open GitHub Pages in a private tab / hard refresh. Test image loading on the phone.
+- This ZIP is not live on GitHub automatically. It must be uploaded/merged into the target repository.

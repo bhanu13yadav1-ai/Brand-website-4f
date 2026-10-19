@@ -1,0 +1,36 @@
+{
+  "javascript_syntax": "PASS",
+  "html_parser": "PASS",
+  "html_id_count": 78,
+  "duplicate_html_ids": [],
+  "static_js_selector_count": 61,
+  "missing_static_selector_ids": [],
+  "allowed_dynamic_ids": [
+    "copyFantasy",
+    "resetCatalog",
+    "skipFantasy"
+  ],
+  "local_asset_references_checked": 11,
+  "missing_local_asset_references": [],
+  "local_css_js_files_checked": 3,
+  "missing_css_js_files": [],
+  "packaged_image_file_count": 11,
+  "invalid_image_files": [],
+  "remote_image_references_in_page": false,
+  "remote_font_import": false,
+  "asset_files": [
+    "campaign-aankhein.webp",
+    "campaign-entry-shareef.webp",
+    "campaign-mirror.webp",
+    "campaign-pallu-shareef.webp",
+    "campaign-sanskari-raat.webp",
+    "look-aankhein.webp",
+    "look-black-lace.webp",
+    "look-entry-shareef.webp",
+    "look-pallu-shareef.webp",
+    "look-sanskari-blue.webp",
+    "wellness-app-reference.webp"
+  ]
+}
+
+PASS — static checks complete. Browser click-through must still be checked on the hosted page/device.
